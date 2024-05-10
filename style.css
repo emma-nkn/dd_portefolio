@@ -1,51 +1,57 @@
 /* initialisation de css */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600&family=Playfair+Display&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  #hero{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/dd02.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 35px;
-    padding-left: 5%;
-    padding-right: 5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logo{
-  color: white ;
+body {
+  font-family: "Roboto", sans-serif;
+}
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/dd02.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 35px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+.logo {
+  text-decoration: none;
+}
+.logo h2 {
+  color: white;
   font-size: 30px;
-  cursor: pointer;
 }
-span{
-  color: rgb(255, 123, 0) ;
+span {
+  color: rgb(255, 123, 0);
 }
-nav ul li{
+nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
-nav ul li a{
- color:white;
- text-decoration: none;
- font-weight: bold;
- text-transform: capitalize;
- font-size: 15px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+  display: inline-block;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: blue;
-  font-size: 25px;
-  transition: .4s;
+  transform: scale(1.3);
+  transition: 0.4s;
 }
-.btn{
+.btn {
   background-color: rgb(250, 250, 250);
   color: rgb(255, 123, 0);
   text-decoration: none;
@@ -53,39 +59,39 @@ nav ul li a:hover{
   border-radius: 10px;
   font-size: 20px;
   padding: 5px 10px;
-  transition: transform .4s;
-} 
-.btn:hover{
+  transition: transform 0.4s;
+}
+.btn:hover {
   transform: scale(1.3);
   color: blue;
 }
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
 }
-h1{
+h1 {
   color: rgb(250, 250, 250);
   margin: 20px 0px 20px;
   font-size: 55px;
 }
-h3{
+h3 {
   color: rgb(250, 250, 250);
   margin-bottom: 60px;
   font-size: 20px;
 }
-h4{
+h4 {
   color: rgb(250, 250, 250);
   margin: 20px 0px 20px;
   font-size: 25px;
 }
-.message form{
+.message form {
   width: 300px;
   max-width: 100px;
   position: relative;
 }
-.message form input:first-child{
+.message form input:first-child {
   display: inline-block;
   width: 100%;
   padding: 10px 250px 10px 15px;
@@ -93,123 +99,121 @@ h4{
   outline: none;
   border-radius: 30px;
 }
-.message form input:last-child{
+.message form input:last-child {
   position: absolute;
   display: inline-block;
   border: none;
   padding: 5px 10px;
-  border-radius: 30PX;
+  border-radius: 30px;
   background-color: rgb(41, 3, 175);
   color: rgb(255, 255, 255);
   box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
   top: 6px;
   right: 15px;
 }
-.propos{
+.propos {
   width: 100%;
-  padding: 20px 20px;
+  padding: 20px 8%;
   background-color: rgb(255, 255, 255);
 }
-.propos img{
+.propos img {
   height: auto;
   padding: 50px;
-  margin: 20px;
   border: 3px solid rgb(5, 5, 5);
   border-radius: 300px;
   box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 }
-.apropos{
-  width: 250px;
+.apropos {
+  width: 100%;
 }
-.main{
-  width: 150px;
+.main {
+  width: 100%;
   margin: 30px 25px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
 }
-.apropos h2{
+.apropos h2 {
   color: black;
   font-size: 65px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.apropos h4{
+.apropos h4 {
   color: rgb(255, 123, 0);
   font-size: 22px;
   letter-spacing: 2px;
   text-transform: capitalize;
   margin-bottom: 25px;
 }
-.apropos p{
+.apropos p {
   color: black;
   font-size: 15px;
   letter-spacing: 1px;
   margin-bottom: 45px;
 }
-button{
+.apropos a {
   color: rgb(255, 123, 0);
   background-color: black;
   text-decoration: none;
   border: 1px solid color rgb(255, 123, 0);
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 30px;
-  transition: .4s;
+  transition: 0.4s;
+  display: inline-block;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
 }
-button:hover{
-  transform: scale(1.3);
-  color: white;
-  border: 1px solid color rgb(255, 123, 0);
-  background-color: blue;
+.apropos a:hover {
+  border: none;
+  transition: all 0.4s;
 }
 
 /* session appel accrocheur*/
-#appel{
+#appel {
   width: 100%;
-  padding: 50px 20px;
+  padding: 50px 8%;
+  text-align: center;
 }
-#appel p{
+#appel p {
   color: rgb(255, 123, 0);
   font-size: 35px;
   letter-spacing: 2px;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 40px;
 }
-.butt{
-  display: flex;
-  padding: 50px 20px;
-}
-.button2{
+.button2 {
   color: rgb(255, 123, 0);
   background-color: black;
   text-decoration: none;
   border: 1px solid color rgb(255, 123, 0);
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 30px;
   text-align: center;
 }
 /* session projet */
-.competence{
+.competence {
   background: #000;
   width: 100%;
   padding: 20px 5px;
-  }
-  .titrec h2{
-    color: rgb(255, 123, 0);
-    font-size: 35px;
-    width: 400px;
-    margin: 5px auto;
-    text-align: center;
-    }
-.boite{
+}
+.titrec h2 {
+  color: rgb(255, 123, 0);
+  font-size: 35px;
+  width: 400px;
+  margin: 5px auto;
+  text-align: center;
+}
+.boite {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 400px;
 }
-.icone{
+.icone {
   height: 350px;
   width: 285px;
   padding: 15px 25px;
@@ -220,28 +224,28 @@ button:hover{
   overflow: hidden;
   text-align: center;
 }
-.icone i{
-font-size: 30px;
-display: block;
-text-align: center;
-margin: 20px 0px;
-color: blue;
-} 
-.icone:hover{
+.icone i {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin: 20px 0px;
+  color: blue;
+}
+.icone:hover {
   background-color: #858585;
 }
-h4{
+h4 {
   color: blue;
   font-size: 20px;
   margin-bottom: 10px;
-} 
-.mots p{
+}
+.mots p {
   color: black;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 15px;
-} 
-.icone .button{
+}
+.icone .button {
   background-color: white;
   color: blue;
   text-decoration: none;
@@ -249,17 +253,15 @@ h4{
   border-radius: 10px;
   font-size: 15px;
   padding: 10px 10px;
-  transition: transform .4s;
-  } 
-  .contact{
-    display: block;
-  } 
+  transition: transform 0.4s;
+}
+.contact {
+  display: block;
+}
 
-
-  /* mise en forme footer*/
-  footer{
-    width: 100px;
-    height: 280px;
-    background-color: rgb(5, 5, 5);
-  } 
-
+/* mise en forme footer*/
+footer {
+  width: 100%;
+  height: 180px;
+  background-color: rgb(5, 5, 5);
+}
